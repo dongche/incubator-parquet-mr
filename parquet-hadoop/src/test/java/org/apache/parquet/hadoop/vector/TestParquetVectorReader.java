@@ -89,10 +89,10 @@ public abstract class TestParquetVectorReader
 
   @Parameterized.Parameters
   public static Collection<Object[]> readerTypes() {
-    Object[][] data = {
+    Object[][] readerTypes = {
         { ReaderType.NON_MR},
         { ReaderType.MR } };
-    return Arrays.asList(data);
+    return Arrays.asList(readerTypes);
   }
 
   private ReaderType readerType;
